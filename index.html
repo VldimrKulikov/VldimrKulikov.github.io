@@ -7,6 +7,104 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="https://kubsu.ru"/"title="Официальный сайт КубГУ></a>
+    <p><a href="http://example.com/">1) http://example.com</a></p>
+	<p><a href="https://example.com/">2) https://example.com</a></p>
+<p><a href="ftp://example.com/Temp/file.txt">3)файл без авторизации</a></p>
+<p><a href="ftp://ashmetki:nadobnosti@example.com/Temp/file.txt">4)файл с авторизацией</a></p>
+<a href="https://saitsamy.blogspot.com/2019/08/blogger_32.html" name="anchorname1"></a>
+<a href="https://saitsamy.blogspot.com/2019/08/blogger_32.html#anchorname1">5) Ссылка на др сайт с якорем</a>
+<a href="#about">6)О компании(?)</a>
+<p id="#about">Наша компания производит стулья.</p>
+<p><a href="https://clinic-mobile.ru/product-category/iphone?page=2&perpage=5">7)ссылка с 2 параметрами </a></p>
+	
+<div id="one">
+  <b><a href="#one" title="Первая ссылка">8)one</a></b>
+  <a href="#two" title="Вторая ссылка">two</a>
+  <a href="#tab/one" title="Третья ссылка">three</a>
+</div>
+	</p>
+	<p>
+		<a>9)Ссылка без href</a>
+		<a href="">10)Пустой href</a>
+	</p>
+	<p>
+		<a href="https://example.com" rel="nofollow">11)запрещен переход</a>
+		<noindex>часть страницы</noindex>>12)запрещена индексация</a>
+	</p>
+	<p>
+		13)Церковная архитектура Византии привлекает к себе значительно большее внимание, чем светская. Этому способствовали как лучшая сохранность церковных памятников в силу исторических обстоятельств (многие храмы были преобразованы в <a target="_blank" href="https://ru.m.wikipedia.org/wiki/Мечеть">мечети</a>), так и их большая «артистичность». 
+	</p>
+	14,15)
+	<map>
+		<img src="https://www.hip-hop.ru/forum/img/2018/01/05/2885685a4fcd7f4d612.jpg" width="640" height="420" usemap="#Navigation" />
+	<map name="Navigation">
+		<area shape="rect" coords="100,100,200,200" href="https://www.hip-hop.ru/forum/img/2018/01/05/2885685a4fcd7f4d612.jpg" alt="Ссылка 1">
+    <area shape="circle" coords="200,200,50" href="https://www.hip-hop.ru/forum/img/2018/01/05/2885685a4fcd7f4d612.jpg" alt="Ссылка 2">
+	</map>
+	<p> <a href="index.html"> 16)относительная на стр в текущем кат</a></p>
+	<p> <a href="about"> 17)относительная на стр в кат about</a></p>
+	<p><a href="/index.html">20)сокращённая на главную</a></p>
+		<p> <a href=”/#one”></a>21)Сокращённая на внутреннюю</p>
+		<h1>Форма</h1>
+		<form action="/" method="POST">
+			<label>
+				Имя:
+				<br />
+				<input name="field-name-1" value="Введите имя">
+			</label>
+			<br />
+			<label>
+				Email
+				<br />
+				<input name="field-email-1" value="Введите почту">
+			</label>
+			<br />
+			<label>
+Дата рождения: <br />
+<input name="field-date" value="0000-00-00" type="date"/>
+			</label>
+			<br />
+			Выберите пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+				Кол-во конечностей:<br />
+				<label><input type="radio" checked="checked"
+					name="radio-group-1" value="Значение1" />
+					 1</label>
+				<label><input type="radio"
+					name="radio-group-1" value="Значение2" />
+					 2</label>
+					 <label><input type="radio"
+						name="radio-group-1" value="Значение3" />
+						 3</label>
+						 <label><input type="radio"
+							name="radio-group-1" value="Значение4" />
+							 4</label><br />
+	<label>Сверхспособности:<br />
+		<select name="field-name-4[]" multiple="multiple">
+			<option value="Значение1">Левитация</option>
+			<option value="Значение2" selected="selected">Прохождение сквозь стены </option>
+			<option value="Значение3" selected="selected">Бессмертие</option>
+		</select>
+	</label>
+	<p>
+	<label>
+		Напишите биографию:<br />
+		<textarea name="field-name-2">начальное значение</textarea>
+	</label><br /><p\>
+		<p>
+			Чекбокс:<br />
+      <label><input type="checkbox"
+        name="check-1" />
+        C контрактом ознакомлен</label><br />
+		</p>
+		<p>
+			<input type="submit" value="Отправить" />
+		</p>
+		</form>
 </body>
 </html>
