@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="main2.css">
 </head>
 <body>
-    <p><a href="http://example.com/">1) http://example.com</a></p>
+	<header>
+	<div class="content">
+		<div class="logo">
+			<img src="https://i.pinimg.com/originals/96/af/86/96af869c81b72f76c010f7ef0f2c5c37.jpg" width="64" height="42" alt="Логотип"> 
+		</div>
+		<div class="name">
+			<span>JUST DO IT</span>
+		</div>
+	</div>
+</header>
+<nav>
+	<p>|</p>
+	<ul id="navbar">
+
+		<li><a href="#">Контакты</a>
+			<ul>
+				<li><a href="#">Адрес</a></li>
+				<li><a href="#">Телефон</a></li>
+				<li><a href="#">Email</a></li>
+			</ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Новости</a></li>
+		<li><a href="#">О нас</a></li>
+	</ul>
+</nav>
+<p><a href="http://example.com/">1) http://example.com</a></p>
 	<p><a href="https://example.com/">2) https://example.com</a></p>
 <p><a href="ftp://example.com/Temp/file.txt">3)файл без авторизации</a></p>
 <p><a href="ftp://ashmetki:nadobnosti@example.com/Temp/file.txt">4)файл с авторизацией</a></p>
@@ -22,14 +48,13 @@
   <a href="#two" title="Вторая ссылка">two</a>
   <a href="#tab/one" title="Третья ссылка">three</a>
 </div>
-	</p>
 	<p>
 		<a>9)Ссылка без href</a>
 		<a href="">10)Пустой href</a>
 	</p>
 	<p>
 		<a href="https://example.com" rel="nofollow">11)запрещен переход</a>
-		<noindex>часть страницы</noindex>>12)запрещена индексация</a>
+		<noindex>часть страницы</noindex>12)запрещена индексация
 	</p>
 	<p>
 		13)Церковная архитектура Византии привлекает к себе значительно большее внимание, чем светская. Этому способствовали как лучшая сохранность церковных памятников в силу исторических обстоятельств (многие храмы были преобразованы в <a target="_blank" href="https://ru.m.wikipedia.org/wiki/Мечеть">мечети</a>), так и их большая «артистичность». 
@@ -44,67 +69,80 @@
 	<p> <a href="index.html"> 16)относительная на стр в текущем кат</a></p>
 	<p> <a href="about"> 17)относительная на стр в кат about</a></p>
 	<p><a href="/index.html">20)сокращённая на главную</a></p>
-		<p> <a href=”/#one”></a>21)Сокращённая на внутреннюю</p>
-		<h1>Форма</h1>
-		<form action="/" method="POST">
-			<label>
-				Имя:
-				<br />
-				<input name="field-name-1" value="Введите имя">
-			</label>
+		<p> <a href="/#one"></a>21)Сокращённая на внутреннюю</p>
+	<table>
+		<tr>
+      <th colspan="3">Участники</th>
+    </tr>
+		<tr><th>Имя</th><th>Фамилия</th><th>Отчество</th></tr>
+		<tr><td>Иван</td><td>Иванов</td><td>Иванович</td></tr>
+		<tr class="alt"><td>Никита</td><td>Иванов</td><td>Иванович</td></tr>
+		<tr><td>Полина</td><td>Иванова</td><td>Ивановна</td></tr>
+		<tr class="alt"><td>Сэм</td><td>Долматов</td><td>Алексеевич</td></tr>
+	</table>
+	<h1>Форма</h1>
+	<form action="/" method="POST">
+		<label>
+			Имя:
 			<br />
-			<label>
-				Email
-				<br />
-				<input name="field-email-1" value="Введите почту">
-			</label>
+			<input name="field-name-1" value="Введите имя">
+		</label>
+		<br />
+		<label>
+			Email
 			<br />
-			<label>
+			<input name="field-email-1" value="Введите почту">
+		</label>
+		<br />
+		<label>
 Дата рождения: <br />
 <input name="field-date" value="0000-00-00" type="date"/>
-			</label>
-			<br />
-			Выберите пол:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Значение1" />
-        Мужской</label>
-      <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
-        Женский</label><br />
-				Кол-во конечностей:<br />
-				<label><input type="radio" checked="checked"
-					name="radio-group-1" value="Значение1" />
-					 1</label>
-				<label><input type="radio"
-					name="radio-group-1" value="Значение2" />
-					 2</label>
+		</label>
+		<br />
+		Выберите пол:<br />
+		<label><input type="radio" checked="checked"
+			name="radio-group-1" value="Значение1" />
+			Мужской</label>
+		<label><input type="radio"
+			name="radio-group-1" value="Значение2" />
+			Женский</label><br />
+			Кол-во конечностей:<br />
+			<label><input type="radio" checked="checked"
+				name="radio-group-1" value="Значение1" />
+				 1</label>
+			<label><input type="radio"
+				name="radio-group-1" value="Значение2" />
+				 2</label>
+				 <label><input type="radio"
+					name="radio-group-1" value="Значение3" />
+					 3</label>
 					 <label><input type="radio"
-						name="radio-group-1" value="Значение3" />
-						 3</label>
-						 <label><input type="radio"
-							name="radio-group-1" value="Значение4" />
-							 4</label><br />
-	<label>Сверхспособности:<br />
-		<select name="field-name-4[]" multiple="multiple">
-			<option value="Значение1">Левитация</option>
-			<option value="Значение2" selected="selected">Прохождение сквозь стены </option>
-			<option value="Значение3" selected="selected">Бессмертие</option>
-		</select>
-	</label>
+						name="radio-group-1" value="Значение4" />
+						 4</label><br />
+<label>Сверхспособности:<br />
+	<select name="field-name-4[]" multiple="multiple">
+		<option value="Значение1">Левитация</option>
+		<option value="Значение2" selected="selected">Прохождение сквозь стены </option>
+		<option value="Значение3" selected="selected">Бессмертие</option>
+	</select>
+</label>
+<p>
+<label>
+	Напишите биографию:<br />
+	<textarea name="field-name-2">начальное значение</textarea>
+</label><br /><p\>
 	<p>
-	<label>
-		Напишите биографию:<br />
-		<textarea name="field-name-2">начальное значение</textarea>
-	</label><br /><p\>
-		<p>
-			Чекбокс:<br />
-      <label><input type="checkbox"
-        name="check-1" />
-        C контрактом ознакомлен</label><br />
-		</p>
-		<p>
-			<input type="submit" value="Отправить" />
-		</p>
-		</form>
+		Чекбокс:<br />
+		<label><input type="checkbox"
+			name="check-1" />
+			C контрактом ознакомлен</label><br />
+	</p>
+	<p>
+		<input type="submit" value="Отправить" />
+	</p>
+	</form>
+	<footer>
+		(c) Куликов Владимир Сергеевич
+	</footer>
 </body>
 </html>
