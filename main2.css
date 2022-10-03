@@ -71,17 +71,6 @@ footer{
 	text-align: center;
 	background-color: #EAF2D3;
 }
-.flex-container{
-	display: flex;
-	height: 100vh;
-	flex-direction: column;
-	}
-	.flex-item-1{
-		order: 2;
-	}
-	.flex-item-2{
-		order: 1;
-	}
 @media screen and (min-width:426px) {
 	
 	header{
@@ -154,14 +143,5 @@ footer{
 		text-align: center;
 		background-color: #EAF2D3;
 	}
-.flex-container{
-display: flex;
-height: 100vh;
-}
-.flex-item-1{
-	order: 1;
-}
-.flex-item-2{
-	order: 2;
-}
+
 }
