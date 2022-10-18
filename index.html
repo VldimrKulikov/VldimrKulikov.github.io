@@ -8,11 +8,46 @@
 	<link rel="stylesheet" href="main2.css">
 </head>
 <body>
-	<p> Цена товара:<input type="text" id="n1"> </p>
-	<p> Количество товара:<input type="text" id="n2"></p>
+	<p> Цена товара:<input type="text" id="prices"> </p>
+	<p> Количество товара:<input type="text" id="kolv"></p>
 	<button onclick="multiply()">*</button>
 	<hr>
 	<p id="out"></p>
+
+	<h1>Рассчитать стоимость станка</h1>
+
+	<form>
+			<label>Тип: </label>
+			<select name="Types">
+					<option value="1">Фрезеровочный</option>
+					<option value="2">Шлифовочный</option>
+					<option value="3">Токарный</option>
+			</select>
+
+			<p><div id="radios">
+					<label><input type="radio" name="Radiobut" value="Radiobut_optioprices" checked="checked">Бомж комплектация</label>
+					<label><input type="radio" name="Radiobut" value="Radiobut_optiokolv" >Полный фарш</label>
+			</div></p>
+
+			<p>
+			<div id="checkboxes">
+					Добавить в комплект<br>
+
+					<label><input type="checkbox" name="komp1">Смазка</label>
+					<label><input type="checkbox" name="komp2">Запасные подшипники</label>
+					<label><input type="checkbox" name="komp3">Подарочная упаковка</label>
+			</div>
+			</p>
+			<div>Укажите количество<br></div>
+			<input id="input" type="number" min="0" max="1000" step="1" value="0">
+			<br>
+
+			<p>Стоимость корзины:</p>
+			
+			<div id="lastprice"></div>
+
+	</form>
+	
 	<script src="script.js" defer></script>
 </body>
 </html>
